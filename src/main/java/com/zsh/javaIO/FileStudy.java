@@ -1,8 +1,7 @@
-package com.company.javaIO;
+package com.zsh.javaIO;
 
 import java.io.File;
 import java.io.FilenameFilter;
-import java.net.SocketPermission;
 import java.util.Arrays;
 import java.util.regex.Pattern;
 
