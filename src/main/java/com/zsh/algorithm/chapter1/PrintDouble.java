@@ -2,6 +2,7 @@ package com.zsh.algorithm.chapter1;
 
 /**
  * Created by zsh7040 on 2018-1-9.
+ * double操作精度一定会丢失
  */
 public class PrintDouble {
 
@@ -45,6 +46,8 @@ public class PrintDouble {
 
     public static void main(String[] args) {
         //通过对1取模==0
-        printInt(234534,2);
+        double a = 60.44;
+        long b = (long)a;
+        System.out.print(a-(double) b);
     }
 }

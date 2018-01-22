@@ -1,4 +1,4 @@
-package com.zsh.InitOrder;
+package com.zsh.initOrder;
 
 /**
  * Created by zsh7040 on 2017-12-28.
@@ -30,6 +30,10 @@ public class Parent {
 
     public Parent(){
         this.parentConstrucor = 4;
+    }
+
+    public void method(){
+        System.out.println("父类method");
     }
 
 }
