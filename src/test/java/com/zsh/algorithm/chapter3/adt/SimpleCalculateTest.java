@@ -6,12 +6,12 @@ import org.junit.Test;
 /**
  * Created by zsh7040 on 2018-1-25.
  */
-public class SimilarCalculateTest {
+public class SimpleCalculateTest {
 
     @Test
     public void testConverse(){
         String expression = "a+b*c+(d*e+f)*g";
-        SimilarCalculate sc = new SimilarCalculate();
+        SimpleCalculate sc = new SimpleCalculate() ;
         sc.convertSuffixPattern(expression);
         StringBuilder sb = new StringBuilder();
         for(Character c :sc.suffixList){
@@ -23,7 +23,7 @@ public class SimilarCalculateTest {
     @Test
     public void testConverse1(){
         String expression = "a+b*(c-d)-e/f";
-        SimilarCalculate sc = new SimilarCalculate();
+        SimpleCalculate sc = new SimpleCalculate();
         sc.convertSuffixPattern(expression);
         StringBuilder sb = new StringBuilder();
         for(Character c :sc.suffixList){
@@ -35,7 +35,7 @@ public class SimilarCalculateTest {
     @Test
     public void testConverse2(){
         String expression = "(a+b)*c*(d-e/f)";
-        SimilarCalculate sc = new SimilarCalculate();
+        SimpleCalculate sc = new SimpleCalculate();
         sc.convertSuffixPattern(expression);
         StringBuilder sb = new StringBuilder();
         for(Character c :sc.suffixList){

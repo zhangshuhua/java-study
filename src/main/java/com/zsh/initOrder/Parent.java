@@ -1,11 +1,16 @@
 package com.zsh.initOrder;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by zsh7040 on 2017-12-28.
  */
 public class Parent {
 
     private static int parentStaticNoInit;
+
+    private static Map hashMap = new HashMap();
 
     private static int parentStaticVariableInit = 1;
 
@@ -30,6 +35,10 @@ public class Parent {
 
     public Parent(){
         this.parentConstrucor = 4;
+        System.out.println(parentStaticNoInit);
+        System.out.println(parentStaticVariableInit);
+        System.out.println(parentStaticRegion);
+        System.out.println(hashMap);
     }
 
     public void method(){

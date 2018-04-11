@@ -1,5 +1,7 @@
 package com.zsh.algorithm.chapter3.adt;
 
+import java.util.List;
+
 /**
  * Created by zsh7040 on 2018-1-24.
  */
@@ -10,7 +12,7 @@ public class MyLinkedList<T> {
         Node next;
         T data;
 
-        public Node(T data){
+        Node(T data){
             this.data = data;
         }
     }
@@ -125,6 +127,13 @@ public class MyLinkedList<T> {
         tail = new Node<>(null);
         head.next=tail;
         tail.privious = head;
+    }
+    public static <E extends CharSequence> List<E> swap(List<E> list){
+        return list;
+    }
+
+    public static  List<? extends CharSequence> swap1(List<CharSequence> list){
+        return list;
     }
 
 }

@@ -17,6 +17,10 @@ public class MaxSub {
 
         for (int i = 0; i <values.length ; i++) {
 
+            if(values[i]<=0){
+                continue;
+            }
+
             int thisSum = 0;
             for (int j = i; j <values.length; j++) {
                 thisSum += values[j];
@@ -24,6 +28,7 @@ public class MaxSub {
                     max = thisSum;
                 }
             }
+
         }
         return max;
     }

@@ -12,7 +12,7 @@ import java.util.Stack;
  * Created by zsh7040 on 2018-1-25.
  * 简单计算器，通过读入String，得到结果
  */
-public class SimilarCalculate {
+public class SimpleCalculate {
 
     private Stack<Character> convertStack;
 
@@ -27,7 +27,7 @@ public class SimilarCalculate {
     private static final char LEFT_PARENTHESES = '(';
     private static final char RIGHT_PARENTHESES = ')';
 
-    public SimilarCalculate(){
+    public SimpleCalculate(){
         convertStack = new Stack<>();
         parseStack = new Stack<>();
         suffixList = new ArrayList<>();
