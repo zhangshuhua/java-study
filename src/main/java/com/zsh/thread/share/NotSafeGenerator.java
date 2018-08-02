@@ -1,10 +1,10 @@
 package com.zsh.thread.share;
 
 /**
- * Created by zsh7040 on 2018-4-19.
+ * Created by zsh7040 on 2018-5-18.
+ * 没有进行任何控制的程序，出现错误
  */
-public class EventGenerator extends IntGenerator {
-
+public class NotSafeGenerator extends IntGenerator {
     private int currentEvenvalue = 0;
 
     @Override
@@ -16,7 +16,6 @@ public class EventGenerator extends IntGenerator {
     }
 
     public static void main(String[] args) {
-        EventChecker.test(new EventGenerator());
+        EventChecker.test(new NotSafeGenerator());
     }
-
 }

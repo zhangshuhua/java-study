@@ -2,6 +2,7 @@ package com.zsh.thread.share;
 
 /**
  * Created by zsh7040 on 2018-4-20.
+ * 使用了synchronized控制的多线程示例
  */
 public class SynchronizedEvenGenerator extends IntGenerator {
 
